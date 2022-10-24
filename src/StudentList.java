@@ -1,6 +1,12 @@
 import java.io.*;
 import java.util.ArrayList;
 
+/**
+ * Gruppe H7
+ * Jasper Angl (108021103663)
+ * Philipp Lehmann (108021228860)
+ * Malte Janek Kottmann (108021220217)
+ */
 public class StudentList {
 
     private ArrayList<Student> studentList;
@@ -12,7 +18,7 @@ public class StudentList {
     public StudentList(StudentList that)  {
         /*
              TODO: Since strings are immutable in Java, we need to convert all elements of each Student
-              to a String and parseit back to an object, only that way we avoid using libraries.
+              to a String and parse it back to an object, only that way we avoid using libraries.
          */
         this.studentList = that.getStudentList();
     }

@@ -5,6 +5,12 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
+/**
+ * Gruppe H7
+ * Jasper Angl (108021103663)
+ * Philipp Lehmann (108021228860)
+ * Malte Janek Kottmann (108021220217)
+ */
 public class Main
 {
     // A test modification
@@ -20,11 +26,10 @@ public class Main
         Student jasonCopy = new Student("Jason", "Bourne", 1, 80.4, new Date(2000, 6, 20));
         Student anna = new Student("Anna", "Bourne", 2, 72, new Date(2000, 9, 20));
         Student peter = new Student("Peter", "Pahn", 3, 72.9, new Date(2000, 10, 20));
-        Student nina = new Student("Nina", "Andresen", 4, 80.4, new Date(2000, 6, 20));
+        Student nina = new Student("Nina", "Ball", 4, 80.4, new Date(2000, 6, 20));
         Student dieter = new Student("Dieter", "Bohlen", 5, 80.4, new Date(2000, 6, 20));
         Student tom = new Student("Tom", "Tewes", 6, 72, new Date(2000, 9, 20));
         Student mark = new Student("Mark", "Tewes", 7, 72.9, new Date(2000, 10, 20));
-
 
         StudentList studentList = new StudentList();
         boolean s1 = studentList.add(jason);

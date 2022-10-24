@@ -1,6 +1,12 @@
 import java.util.Date;
 import java.util.Objects;
 
+/**
+ * Gruppe H7
+ * Jasper Angl (108021103663)
+ * Philipp Lehmann (108021228860)
+ * Malte Janek Kottmann (108021220217)
+ */
 public class Student {
     private String firstname;
     private String lastname;
