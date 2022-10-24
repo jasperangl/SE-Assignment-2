@@ -30,6 +30,8 @@ public class Main
         Student dieter = new Student("Dieter", "Bohlen", 5, 80.4, new Date(2000, 6, 20));
         Student tom = new Student("Tom", "Tewes", 6, 72, new Date(2000, 9, 20));
         Student mark = new Student("Mark", "Tewes", 7, 72.9, new Date(2000, 10, 20));
+        Student philipp = new Student("Philipp", "Lehmann", 8, 75.9, new Date(1900, 10, 20));
+        Student malte = new Student("Malte", "Jakschik", 9, 78.9, new Date(2005, 8, 20));
 
         StudentList studentList = new StudentList();
         boolean s1 = studentList.add(jason);
