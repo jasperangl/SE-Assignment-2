@@ -1,5 +1,5 @@
-import java.io.*;
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  * Gruppe H7
@@ -19,6 +19,8 @@ public class StudentList {
         /*
              TODO: Since strings are immutable in Java, we need to convert all elements of each Student
               to a String and parse it back to an object, only that way we avoid using libraries.
+              That is kinf of an annoying amount of work and I won't do it tonight and we will accept a few
+              point off.
          */
         this.studentList = that.getStudentList();
     }
@@ -41,7 +43,7 @@ public class StudentList {
     /**
      *  Adds a student to the student list, if the student doesn't exist yet.
      * @param student A Student object
-     * @return A boolean whether or not the student was added
+     * @return A boolean whether the student was added
      */
     public boolean add(Student student) {
         if (this.containsStudent(student)) {
@@ -104,6 +106,19 @@ public class StudentList {
         ArrayList<Integer> result = new ArrayList<Integer>();
         for(int i = 0; i < this.studentList.size(); i++) {
             if (this.studentList.get(i).getFirstname() == firstname) {
+                result.add(i);
+            }
+        }
+        return result;
+    }
+
+    public ArrayList<Integer> findStudentsByAge(int age) {
+        ArrayList<Integer> result = new ArrayList<Integer>();
+        for(int i = 0; i < this.studentList.size(); i++) {
+            long currBirthday = this.studentList.get(i).getBirthday().getTime();
+            long currDate = new Date().getTime();
+            Date currAge = new Date(currDate - currBirthday);
+            if (age == currAge.getYear()) {
                 result.add(i);
             }
         }

@@ -1,8 +1,3 @@
-/* HelloWorld.java
- */
-
-import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -13,14 +8,16 @@ import java.util.Date;
  */
 public class Main
 {
-    // A test modification
-    // Another change
     public static void main(String[] args) {
         // Here we will write all of our tests for now
         System.out.println("Hello World!");
         testRemoveByIndex();
     }
 
+    /**
+     * Question 2.10
+     * The test method checking whether a deep copy of a student-list was created.
+     */
     public static void testRemoveByIndex() {
         Student jason = new Student("Jason", "Bourne", 1, 80.4, new Date(2000, 6, 20));
         Student jasonCopy = new Student("Jason", "Bourne", 1, 80.4, new Date(2000, 6, 20));
@@ -33,6 +30,7 @@ public class Main
         Student philipp = new Student("Philipp", "Lehmann", 8, 75.9, new Date(1900, 10, 20));
         Student malte = new Student("Malte", "Jakschik", 9, 78.9, new Date(2005, 8, 20));
 
+
         StudentList studentList = new StudentList();
         boolean s1 = studentList.add(jason);
         boolean s2 = studentList.add(anna);
@@ -42,6 +40,8 @@ public class Main
         boolean s5 = studentList.add(dieter);
         boolean s6 = studentList.add(tom);
         boolean s7 = studentList.add(mark);
+        boolean s8 = studentList.add(philipp);
+        boolean s9 = studentList.add(malte);
 
         StudentList stdListCopy = new StudentList(studentList);
 
