@@ -13,6 +13,7 @@ public class Main {
         Room bedroom = new Room("Bedroom", false);
         Kitchen kitchen = new Kitchen("Kitchen", false, false);
         Bathroom bathroom = new Bathroom("Bathroom", false, false);
+        //TODO: extensions don't add neighbors correctly yet
         apartment.extension(workroom);
         apartment.extension(bedroom);
         apartment.extension(kitchen);

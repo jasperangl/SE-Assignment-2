@@ -18,11 +18,13 @@ public class Bathroom extends Room{
 
     @Override
     protected void enter() {
-        super.enter(); // Change here according to room
+        super.enter();
+        //TODO: Change here according to room
     }
 
     @Override
     protected int receiveReply() {
-        return super.receiveReply(); // Change here according to room
+        return super.receiveReply();
+        //TODO: Change here according to room
     }
 }

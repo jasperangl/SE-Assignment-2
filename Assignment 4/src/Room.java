@@ -15,6 +15,10 @@ public class Room {
         this.neighbors.add(room);
     }
 
+    public void switchLight() {
+        this.lightning = !this.lightning;
+    }
+
     /**
      * Here we ask the Questions, say which room were in etc.
      */
@@ -26,6 +30,17 @@ public class Room {
         System.out.println("3) Leave room");
         int reply = this.receiveReply();
         //TODO: Act accordingly to reply
+
+        if (reply == 1) {
+            this.switchLight();
+            if (this.lightning) {
+                System.out.println("Light has been turned on");
+            } else {
+                System.out.println("Light has been turned off");
+            }
+        }
+        //TODO: 2) Enter neighbor room: Give list of all neighbor
+        //TODO: 3) Leave Room: Has to leave into the previous room
     }
 
     protected int receiveReply() {
@@ -33,7 +48,7 @@ public class Room {
         // BufferReader
         Scanner reader = new Scanner(System.in);
         int answer = reader.nextInt();
-        if (answer > 0 || answer < 3) {
+        if (answer > 0 && answer < 3) {
             return answer;
         } else {
             throw new IllegalArgumentException("Wrong integer input");
