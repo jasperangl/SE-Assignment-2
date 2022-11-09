@@ -9,6 +9,8 @@ import java.time.format.DateTimeFormatter;
  * Philipp Lehmann (108021228860)
  * Malte Janek Kottmann (108021220217)
  */
+
+// A test commit
 public class Version_1 {
     private static InputStreamReader isr;
     private static BufferedReader br;
