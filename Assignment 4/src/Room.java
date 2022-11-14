@@ -1,18 +1,23 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+/**
+ * Gruppe H7
+ * Jasper Angl (108021103663)
+ * Philipp Lehmann (108021228860)
+ * Malte Janek Kottmann (108021220217)
+ */
 
 public class Room {
-    private String name;
+    private final String name;
     private boolean lightning;
     private ArrayList<Room> neighbors;
-    public Room(String name) {
+    public Room(String name, boolean lightning) {
         this.name = name;
-        this.lightning = false;
+        this.lightning = lightning;
         this.neighbors = new ArrayList<>();
     }
 
     public void addNeighbor(Room room) {
-        System.out.println(this.neighbors);
         if (!isNeighbor(room)) {
             this.neighbors.add(room);
             room.neighbors.add(this);
@@ -21,6 +26,14 @@ public class Room {
 
     public ArrayList<Room> getNeighbors() {
         return this.neighbors;
+    }
+
+    public boolean lightOn() {
+        return this.lightning;
+    }
+
+    public String getName() {
+        return this.name;
     }
 
     protected void switchLight() {
@@ -48,18 +61,19 @@ public class Room {
         }
         if (reply == 2) {
             this.enterNeighborRoom();
-            this.enter(); // This will ensure you will always come back to the previous room upon leaving
+            // Here below we utilize the call-stack. We stack the enter() method of a new room on-top of the current one.
+            // This way we always return to the previously entered room, once it finished processing the enter() method
+            // of the new room.
+            this.enter();
         }
         if (reply == 3) {
             System.out.println("Leaving the " + this.name);
-        } else {
-            throw new IllegalArgumentException("Invalid Reply");
         }
     }
 
+
     protected int receiveReply(int range) {
-        // Scanner can purposefully wait till nextInt and therefore doesn't need much error handling, in contrast to
-        // BufferReader
+        // Scanner can purposefully wait till nextInt and therefore needs less error handling, in contrast to BufferReader
         Scanner reader = new Scanner(System.in);
         int answer = reader.nextInt();
         if (answer > 0 && answer <= range) {
@@ -87,6 +101,7 @@ public class Room {
         }
         return false;
     }
+
 
 
 }
