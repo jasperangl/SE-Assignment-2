@@ -4,6 +4,7 @@ import java.util.ArrayList;
  * Jasper Angl (108021103663)
  * Philipp Lehmann (108021228860)
  * Malte Janek Kottmann (108021220217)
+ * hfhfj
  */
 public class Apartment {
 
