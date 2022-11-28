@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Room {
     private final String name;
     private boolean lightning;
-    private ArrayList<Room> neighbors;
+    private final ArrayList<Room> neighbors;
     public Room(String name, boolean lightning) {
         this.name = name;
         this.lightning = lightning;
@@ -22,10 +22,6 @@ public class Room {
             this.neighbors.add(room);
             room.neighbors.add(this);
         }
-    }
-
-    public ArrayList<Room> getNeighbors() {
-        return this.neighbors;
     }
 
     public boolean lightOn() {
@@ -46,7 +42,7 @@ public class Room {
     }
 
     /**
-     * Here we ask the Questions, say which room were in etc.
+     * Here we ask the Questions, say which room we're in etc.
      */
     protected void enter() {
         System.out.println("You're in the " + this.name);
