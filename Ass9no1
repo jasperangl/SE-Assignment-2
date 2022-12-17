@@ -1,1 +1,151 @@
-<mxfile host="app.diagrams.net" modified="2022-12-17T17:52:12.511Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.7.2" etag="p-7sqYOOwuHtA7z7RyIQ" type="github"><diagram id="fOZKiHddcKMEKEplMzuW">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-12-17T19:16:27.214Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.7.2" etag="FC46UvZypooiDXTJZruK" type="github">
+  <diagram id="ZnDGqTzEsWvegBzTieVw" name="Seite-1">
+    <mxGraphModel dx="2794" dy="878" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-1" value="InputStream" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="70" width="160" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-2" value="InputStream ()    " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-1">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-1">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-4" value="int            abvailable()&#xa;void           close ()&#xa;void           mark&#xa;boolean    markSupported&#xa;int              read ()&#xa;int              read (byte[] b)&#xa;int              read()&#xa;void           reset&#xa;long           skip" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-1">
+          <mxGeometry y="60" width="160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-5" value="FileInputStream" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="360" width="270" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-6" value="FileInputStream​(File file)&#xa;FileInputStream​(FileDescriptor fdObj)&#xa;FileInputStream​(String name)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-5">
+          <mxGeometry y="26" width="270" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-5">
+          <mxGeometry y="80" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-8" value="int            available()&#xa;void         close()&#xa;FileChannel     getChannel()&#xa;FileChannel     getFD()&#xa;int            read()&#xa;int            read(byte[] b, int off, int len)&#xa;int            read(byte[] b)&#xa;long         skip(long n)&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-5">
+          <mxGeometry y="88" width="270" height="132" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-9" value="FilterInputStream" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="360" width="264" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-10" value="protected FilterInputStream(InputStream in)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-9">
+          <mxGeometry y="26" width="264" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-9">
+          <mxGeometry y="52" width="264" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-12" value="int            available()&#xa;void         close()&#xa;void         mark(int readlimit)&#xa;boolean   markSupported()&#xa;int            read()&#xa;a&#xa;int            read(byte[] b, int off, int len)&#xa;void         reset()&#xa;long         skip(long n)&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-9">
+          <mxGeometry y="60" width="264" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-13" value="ByteArrayInputStream" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="360" width="260" height="238" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-14" value="ByteArrayInputStream(byte [] buf)&#xa;ByteArrayInputStream(InputStream in, int size)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-13">
+          <mxGeometry y="26" width="260" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-13">
+          <mxGeometry y="70" width="260" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-16" value="int            available()&#xa;void         close()&#xa;void         mark(int readlimit)&#xa;boolean   markSupported()&#xa;int            read()&#xa;int            read(byte[] b, int off, int len)&#xa;byte []      readAllBytes()&#xa;int            readNBytes(byte[] b, int off, int len)&#xa;void         reset()&#xa;long         skip(long n)&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-13">
+          <mxGeometry y="78" width="260" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-17" value="BufferedInputStream" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="360" width="260" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-18" value="BufferedInputStream(InputStream in)&#xa;BufferedInputStream(InputStream in, int size)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-17">
+          <mxGeometry y="26" width="260" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-17">
+          <mxGeometry y="70" width="260" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-20" value="int            available()&#xa;void         close()&#xa;void         mark(int readlimit)&#xa;boolean   markSupported()&#xa;int            read()&#xa;int            read(byte[] b, int off, int len)&#xa;void         reset()&#xa;long         skip(long n)&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-17">
+          <mxGeometry y="78" width="260" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-21" value="PipedInputStream" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-420" y="360" width="280" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-22" value="PipedInputStream()&#xa;PipedInputStream​(int pipeSize)&#xa;PipedInputStream​(PipedOutputStream src)&#xa;PipedInputStream​(PipedOutputStream src, &#xa;int pipeSize)&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-21">
+          <mxGeometry y="26" width="280" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-23" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-21">
+          <mxGeometry y="110" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-24" value="int            available()&#xa;void         close()&#xa;void         mark(int readlimit)&#xa;int            read()&#xa;int            read(byte[] b, int off, int len)&#xa;protected void     receive(int b)&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-21">
+          <mxGeometry y="118" width="280" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-25" value="DataInputStream" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="640" width="270" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-26" value="DataInputStream​(InputStream in)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-25">
+          <mxGeometry y="26" width="270" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-27" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-25">
+          <mxGeometry y="50" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-28" value="int             read​(byte[] b)&#xa;int	            read​(byte[] b, int off, int len)&#xa;boolean	   readBoolean()&#xa;byte	        		readByte()&#xa;char	        		readChar()&#xa;double	     readDouble()&#xa;float	        		readFloat()&#xa;void	        		readFully​(byte[] b)&#xa;void	         readFully​(byte[] b, int off, int len)&#xa;int	            readInt()&#xa;String	     	readLine()&#xa;long        	readLong()&#xa;short        readShort()&#xa;int	           readUnsignedByte()&#xa;int            	readUnsignedShort()&#xa;String	      readUTF()&#xa;static String	readUTF​(DataInput in)&#xa;int	            skipBytes​(int n)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-25">
+          <mxGeometry y="58" width="270" height="282" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-29" value="PushbackInputStream" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="640" width="270" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-30" value="PushbackInputStream​(InputStream in)&#xa;PushbackInputStream​(InputStream in, int size)&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-29">
+          <mxGeometry y="26" width="270" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-31" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-29">
+          <mxGeometry y="70" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-32" value="int            available()&#xa;void         close()&#xa;void         mark(int readlimit)&#xa;boolean   markSupported()&#xa;int            read()&#xa;int            read(byte[] b, int off, int len)&#xa;void         reset()&#xa;long         skip(long n)&#xa;void         unread(byte[] b)&#xa;void	        unread​(byte[] b, int off, int len)&#xa;void	        unread​(int b)&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KapoKi9IzSsURf5_9ulJ-29">
+          <mxGeometry y="78" width="270" height="172" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-33" value="The InputStream class and its subclasses seem to use the Decorator design pattern. &lt;br&gt;The InputStream class is the component and its &lt;br&gt;subclasses are the decorators, which add additional behavior to the component." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-480" y="640" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-34" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KapoKi9IzSsURf5_9ulJ-21" target="KapoKi9IzSsURf5_9ulJ-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-310" y="310" as="sourcePoint" />
+            <mxPoint x="-150" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-35" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.997;entryY=0.993;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="KapoKi9IzSsURf5_9ulJ-13" target="KapoKi9IzSsURf5_9ulJ-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="430" y="280" as="sourcePoint" />
+            <mxPoint x="590" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-36" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.502;entryY=0.997;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="KapoKi9IzSsURf5_9ulJ-25" target="KapoKi9IzSsURf5_9ulJ-12">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="170" y="598" as="sourcePoint" />
+            <mxPoint x="330" y="598" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-37" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KapoKi9IzSsURf5_9ulJ-17" target="KapoKi9IzSsURf5_9ulJ-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="730" y="300" as="sourcePoint" />
+            <mxPoint x="890" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-38" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.468;entryY=1.018;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="KapoKi9IzSsURf5_9ulJ-9" target="KapoKi9IzSsURf5_9ulJ-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="210" y="320" as="sourcePoint" />
+            <mxPoint x="370" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-39" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=-0.01;entryY=0.985;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="KapoKi9IzSsURf5_9ulJ-5" target="KapoKi9IzSsURf5_9ulJ-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint y="300" as="sourcePoint" />
+            <mxPoint x="160" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KapoKi9IzSsURf5_9ulJ-40" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.734;entryY=1.014;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="KapoKi9IzSsURf5_9ulJ-29" target="KapoKi9IzSsURf5_9ulJ-12">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="452.12" y="647.48" as="sourcePoint" />
+            <mxPoint x="375.00000000000057" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
